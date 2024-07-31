@@ -1,8 +1,13 @@
 Anniston Fees
 D279 User Interface Design
 
+This course is an introductory level course on User Interface Design. In this project. I show my proficiency in creating plans for a user interface design, building a wireframe, usability testing, SEO optimization, and creating a full scale rough prototype based in simple HTML5 and CSS.
 
+/////
 
+Course Overview: This course covers tools and techniques employed in user interface design, including web and mobile applications. Concepts of clarity, usability, and detectability are included in this course, as well as other design elements such as color schemes, typography, and layout. Techniques like wireframing, usability testing, and SEO optimization are also covered.
+
+/////
 
 Part 1.
 Paradigm Pet Professionals is a pet consulting company that aims to deliver information to it’s customers via their website and consulting appointments. Their website serves to inform and entice customers to book consultation appointments with them.
