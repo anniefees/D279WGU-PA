@@ -1,82 +1,123 @@
-
-*{
-    font-family: 'Courier New', Courier, monospace;
-    color: 003B6D;
-    background-color: white;
-}
-
-.navBar li{
-    color: BDBDBD;
-    background-color: 003B6D;
-    
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-.footer{
-    color: 003B6D;
-    background-color: BDBDBD;
-}
-
-.contactForm{
-    color: 003B6D;
-    background-color: BDBDBD;
-}
-
-body {
-    justify-content: center;
-    align-items: center; 
+/* Global Styles */
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #003B6D;
     margin: 0;
-    
-    }
-li.navBar{
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+}
+
+/* Navigation Bar */
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003B6D;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 10%;
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navList li {
     display: inline;
 }
+
 .button {
     background-color: #2c1aed;
-    border: none;
-    border-radius: 10px ;
     color: white;
-    padding: 10px 20px;
-    text-align: center;
+    padding: 10px 15px;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #000080;
+}
+
+.active {
+    background-color: #28a745;
+}
+
+/* Home Content */
+#homeContent {
+    margin: 40px;
+    text-align: center;
+}
+
+.petContent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.petCard {
+    width: 30%;
+    text-align: center;
+}
+
+.petCard img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+#contactForm {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.formRow {
+    margin-bottom: 15px;
+}
+
+.formRow label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formRow input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submitButton {
+    background-color: #28a745;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
     cursor: pointer;
-  }
-#contactForm{
-    margin: 20px;
-    border: 3px solid black;
-    text-align: center;
-    padding: 10px;
-    max-width: 50%;
-    align-self: center;
 }
-tr{padding: 37px;}
-td{ padding: 12px;}
-.cForm{
-    margin: 20px;
-    text-align: center;
-    padding: 10px;
+
+/* Footer */
+#footer {
+    background-color: #003B6D;
+    color: white;
+    padding: 20px 0;
+}
+
+.footerContent {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    align-self: center;
 }
-.contain{
-    margin: 20px;
-    border: 3px solid black;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-}
-table{
-    text-align: center;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
+
+.footerLogo {
+    width: 80px;
 }
