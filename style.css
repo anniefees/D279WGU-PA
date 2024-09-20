@@ -1,123 +1,182 @@
-/* Global Styles */
+/* Universal styling */
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     color: #003B6D;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F9F9F9;
 }
 
-/* Navigation Bar */
-#navBar {
+body {
+    background-color: #f8f9fa;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Bar Styling */
+.navbar {
     background-color: #003B6D;
-    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 }
 
 .logo {
-    width: 10%;
+    width: 100px;
 }
 
 .navList {
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .navList li {
-    display: inline;
+    margin: 0 20px;
 }
 
-.button {
+.navList .button {
     background-color: #2c1aed;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-.button:hover {
-    background-color: #000080;
+.navList .button:hover {
+    background-color: #1a1480;
 }
 
-.active {
-    background-color: #28a745;
+.navList .active {
+    background-color: #00a86b;
 }
 
-/* Home Content */
-#homeContent {
-    margin: 40px;
-    text-align: center;
-}
-
-.petContent {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.petCard {
-    width: 30%;
-    text-align: center;
-}
-
-.petCard img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Contact Form */
-#contactForm {
-    margin: 50px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: #F0F0F0;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-}
-
-.formRow {
-    margin-bottom: 15px;
-}
-
-.formRow label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.formRow input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.submitButton {
-    background-color: #28a745;
-    padding: 12px 20px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-/* Footer */
+/* Footer Styling */
 #footer {
     background-color: #003B6D;
     color: white;
-    padding: 20px 0;
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .footerContent {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+
+.footerContent ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerContent li {
+    margin: 0 15px;
+}
+
+.footerContent .button {
+    background-color: #2c1aed;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.footerContent .button:hover {
+    background-color: #1a1480;
 }
 
 .footerLogo {
     width: 80px;
+}
+
+/* Main Content Styling */
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+.contentHeader {
+    margin-bottom: 40px;
+}
+
+.contentImage {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Bird Content Section */
+.birdSection {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.birdList {
+    margin: 20px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* Contact Form Styling */
+.contact-section {
+    background-color: #f1f1f1;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submitButton {
+    background-color: #00a86b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #008956;
+}
+
+/* Table Styling (If Needed) */
+table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+td, th {
+    padding: 15px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .navList {
+        flex-direction: column;
+    }
+
+    .navList li {
+        margin: 10px 0;
+    }
 }
