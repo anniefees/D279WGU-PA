@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cats</title>
+    <title>Cats - Paradigm Pet Professionals</title>
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav id="navBar">
-        <img src="PPPLogo.png" alt="PPP Logo" class="logo">
-        <ul class="navList">
-            <li><a class="button" href="index.html">Home</a></li>
-            <li><a class="button" href="dog.html">Dogs</a></li>
-            <li><a class="button active" href="cat.html">Cats</a></li>
-            <li><a class="button" href="birds.html">Birds</a></li>
-            <li><a class="button" href="#contactForm">Contact</a></li>
-        </ul>
+        <div class="container">
+            <img src="PPPLogo.png" alt="PPP Logo" class="logo">
+            <ul class="navList">
+                <li><a class="button" href="index.html">Home</a></li>
+                <li><a class="button" href="dog.html">Dogs</a></li>
+                <li><a class="button active" href="cat.html">Cats</a></li>
+                <li><a class="button" href="birds.html">Birds</a></li>
+                <li><a class="button" href="#contactForm">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Main Content Section -->
-    <section id="catContent">
+    <section id="catContent" class="container">
         <div class="contentHeader">
             <img src="cat.png" alt="Cat Image" class="contentImage">
             <h1>Cats</h1>
@@ -29,79 +33,46 @@
 
         <div class="catInfo">
             <article class="catSection">
-                <h3>The Journey of Cats</h3>
-                <p>Cats were first domesticated around 7500 BCE in Western Asia and are the second most popular domestic pet in the U.S. While there are over 60 unique breeds, some general care practices apply to all cats regardless of breed. In this section, you'll find tips on caring for your cat at various stages of life.</p>
+                <h2>The Journey of Cats</h2>
+                <p>Cats were first domesticated around 7500 BCE. In this section, you'll find tips on caring for your cat at various stages of life.</p>
             </article>
 
             <article class="catSection">
-                <h3>From Birth to One Year</h3>
-                <p>In the first weeks, kittens should nurse directly from their mother, also known as the queen. If any kittens struggle to grow, it might be necessary for the caretaker to bottle-feed or use a feeding tube. Kittens typically start transitioning to solid food by three to four weeks. Wet kitten food is ideal during this period for its extra nutrients.</p>
+                <h2>From Birth to One Year</h2>
+                <p>Kittens should nurse from their mother. By three to four weeks, wet kitten food is ideal for transitioning to solid food.</p>
             </article>
 
             <article class="catSection">
-                <h3>One to Seven Years: Cat Stage</h3>
-                <p>As cats mature, their dietary needs change. Limit their food intake to avoid obesity, offering two meals a day instead of leaving food out constantly. This helps maintain a healthy weight and prevents common health issues.</p>
+                <h2>One to Seven Years: Adult Stage</h2>
+                <p>As cats mature, their dietary needs change. Offering two meals a day helps maintain a healthy weight and prevents health issues.</p>
             </article>
 
             <article class="catSection">
-                <h3>Seven Years and Beyond: Senior Cats</h3>
-                <p>As cats age, they need fewer calories and more high-quality protein. Check labels carefully to ensure the food contains named protein sources (e.g., salmon) rather than general categories like "fish," which often indicates lower-quality ingredients.</p>
+                <h2>Seven Years and Beyond: Senior Cats</h2>
+                <p>As cats age, they need fewer calories and more high-quality protein. Be mindful of ingredient quality in your cat's food.</p>
             </article>
         </div>
     </section>
 
     <!-- Contact Form -->
-    <section id="contactForm">
+    <section id="contactForm" class="container contact-section">
         <h2>Contact Us For a Consultation</h2>
         <form>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="fname">Owner First Name:</label>
-                <input type="text" id="fname" name="fname">
+                <input type="text" id="fname" name="fname" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="lname">Owner Last Name:</label>
-                <input type="text" id="lname" name="lname">
+                <input type="text" id="lname" name="lname" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="number">Phone Number:</label>
-                <input type="text" id="number" name="number">
+                <input type="text" id="number" name="number" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="email">Email Address:</label>
-                <input type="text" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </div>
-            <div class="formRow">
-                <label for="time">Time Zone:</label>
-                <input type="text" id="time" name="time">
-            </div>
-            <div class="formRow">
-                <label for="petName">Pet Name:</label>
-                <input type="text" id="petName" name="petName">
-            </div>
-            <div class="formRow">
-                <label for="petAge">Pet Age:</label>
-                <input type="text" id="petAge" name="petAge">
-            </div>
-            <div class="formRow">
-                <label for="petType">Pet Type:</label>
-                <input type="text" id="petType" name="petType">
-            </div>
-            <input class="button submitButton" type="submit" value="Submit">
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="footerContent">
-            <ul class="navList">
-                <li><a href="dog.html">Dogs</a></li>
-                <li><a href="cat.html">Cats</a></li>
-                <li><a href="birds.html">Birds</a></li>
-                <li><a href="#contactForm">Contact</a></li>
-            </ul>
-            <img src="PPPoldLogo.png" alt="Old Logo" class="footerLogo">
-        </div>
-    </footer>
-
-</body>
-</html>
+            <div class="formGroup">
+                <label for="time
