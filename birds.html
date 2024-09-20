@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birds</title>
+    <title>Birds - Paradigm Pet Professionals</title>
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav id="navBar">
-        <img src="PPPLogo.png" alt="PPP Logo" class="logo">
-        <ul class="navList">
-            <li><a class="button" href="index.html">Home</a></li>
-            <li><a class="button" href="dog.html">Dogs</a></li>
-            <li><a class="button" href="cat.html">Cats</a></li>
-            <li><a class="button active" href="birds.html">Birds</a></li>
-            <li><a class="button" href="#contactForm">Contact</a></li>
-        </ul>
+        <div class="container">
+            <img src="PPPLogo.png" alt="PPP Logo" class="logo">
+            <ul class="navList">
+                <li><a class="button" href="index.html">Home</a></li>
+                <li><a class="button" href="dog.html">Dogs</a></li>
+                <li><a class="button" href="cat.html">Cats</a></li>
+                <li><a class="button active" href="birds.html">Birds</a></li>
+                <li><a class="button" href="#contactForm">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Main Content Section -->
-    <section id="birdContent">
+    <section id="birdContent" class="container">
         <div class="contentHeader">
             <img src="bird.png" alt="Bird Image" class="contentImage">
             <h1>Birds</h1>
@@ -29,67 +33,60 @@
 
         <div class="birdInfo">
             <article class="birdSection">
-                <h3>Understanding Your Bird's Needs</h3>
-                <p>Birds are fascinating creatures, with species ranging from the tiny Cuban bee hummingbird to the massive ostrich. While many birds fly, others don’t. Each bird species has its own unique needs for social interaction, physical care, and mental well-being.</p>
+                <h2>Understanding Your Bird's Needs</h2>
+                <p>Birds are fascinating creatures, with species ranging from the tiny Cuban bee hummingbird to the massive ostrich. Each bird species has its own unique needs for social interaction, physical care, and mental well-being.</p>
             </article>
 
             <article class="birdSection">
-                <h3>Birds and Mental Health</h3>
-                <p>Birds can experience sadness and depression, just like humans. Common causes include illness, loss of a companion, or boredom. Signs of depression in birds include:</p>
-                <ul class="birdList">
-                    <li>Reduced appetite</li>
-                    <li>Increased irritability</li>
-                    <li>Aggressive behavior</li>
-                    <li>Change in song tone to a more solemn melody</li>
-                </ul>
-                <p>If you notice these signs, consult a veterinarian. Early intervention can significantly improve your bird’s health and extend its life.</p>
+                <h2>Birds and Mental Health</h2>
+                <p>Birds can experience sadness and depression, just like humans. Common signs of depression in birds include reduced appetite, increased irritability, aggressive behavior, and changes in song tone. Consult a veterinarian if you notice these signs.</p>
             </article>
         </div>
     </section>
 
     <!-- Contact Form -->
-    <section id="contactForm">
+    <section id="contactForm" class="container contact-section">
         <h2>Contact Us For a Consultation</h2>
         <form>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="fname">Owner First Name:</label>
-                <input type="text" id="fname" name="fname">
+                <input type="text" id="fname" name="fname" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="lname">Owner Last Name:</label>
-                <input type="text" id="lname" name="lname">
+                <input type="text" id="lname" name="lname" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="number">Phone Number:</label>
-                <input type="text" id="number" name="number">
+                <input type="text" id="number" name="number" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="email">Email Address:</label>
-                <input type="text" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="time">Time Zone:</label>
-                <input type="text" id="time" name="time">
+                <input type="text" id="time" name="time" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="petName">Pet Name:</label>
-                <input type="text" id="petName" name="petName">
+                <input type="text" id="petName" name="petName" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="petAge">Pet Age:</label>
-                <input type="text" id="petAge" name="petAge">
+                <input type="number" id="petAge" name="petAge" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="petType">Pet Type:</label>
-                <input type="text" id="petType" name="petType">
+                <input type="text" id="petType" name="petType" required>
             </div>
-            <input class="button submitButton" type="submit" value="Submit">
+            <button type="submit" class="submitButton">Submit</button>
         </form>
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
-        <div class="footerContent">
+    <footer id="footer" class="footer">
+        <div class="container footerContent">
             <ul class="navList">
                 <li><a href="dog.html">Dogs</a></li>
                 <li><a href="cat.html">Cats</a></li>
@@ -98,6 +95,7 @@
             </ul>
             <img src="PPPoldLogo.png" alt="Old Logo" class="footerLogo">
         </div>
+        <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
     </footer>
 
 </body>
