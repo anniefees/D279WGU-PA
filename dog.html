@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dogs</title>
+    <title>Dogs - Paradigm Pet Professionals</title>
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav id="navBar">
-        <img src="PPPLogo.png" alt="PPP Logo" class="logo">
-        <ul class="navList">
-            <li><a class="button" href="index.html">Home</a></li>
-            <li><a class="button active" href="dog.html">Dogs</a></li>
-            <li><a class="button" href="cat.html">Cats</a></li>
-            <li><a class="button" href="birds.html">Birds</a></li>
-            <li><a class="button" href="#contactForm">Contact</a></li>
-        </ul>
+        <div class="container">
+            <img src="PPPLogo.png" alt="PPP Logo" class="logo">
+            <ul class="navList">
+                <li><a class="button" href="index.html">Home</a></li>
+                <li><a class="button active" href="dog.html">Dogs</a></li>
+                <li><a class="button" href="cat.html">Cats</a></li>
+                <li><a class="button" href="birds.html">Birds</a></li>
+                <li><a class="button" href="#contactForm">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Main Content Section -->
-    <section id="dogContent">
+    <section id="dogContent" class="container">
         <div class="contentHeader">
             <img src="dog.png" alt="Dog Image" class="contentImage">
             <h1>Dogs</h1>
@@ -29,70 +33,70 @@
 
         <div class="dogInfo">
             <article class="dogSection">
-                <h3>Adopting Dogs: A Lifelong Companion</h3>
-                <p>The domestic dog is an extremely social animal with over 300 recognized breeds. Adopting a dog offers mutual benefits for both the dog and the owner, improving social well-being and even physical health through reduced blood pressure and better lipid profiles. On this page, you will find information about how to care for your dogs throughout the various stages of their lives.</p>
+                <h2>Adopting Dogs: A Lifelong Companion</h2>
+                <p>Adopting a dog offers mutual benefits for both the dog and the owner, improving social well-being and even physical health through reduced blood pressure and better lipid profiles. Learn how to care for dogs throughout the various stages of their lives.</p>
             </article>
 
             <article class="dogSection">
-                <h3>Diet & Exercise</h3>
-                <p>Throughout a dog's life, they need to be fed and exercised appropriately. Puppies need more frequent meals, starting with nursing for the first two months. As they grow, their food intake can be reduced to one meal per day by the time they reach one year old. Regular exercise—between 30 to 120 minutes a day—helps maintain a healthy body and mind.</p>
+                <h2>Diet & Exercise</h2>
+                <p>Puppies need more frequent meals, while adult dogs can be fed once per day. Regular exercise—between 30 to 120 minutes a day—helps maintain a healthy body and mind.</p>
             </article>
 
             <article class="dogSection">
-                <h3>Grooming & Handling</h3>
-                <p>Keeping your dog clean is crucial for its health. Regular brushing prevents shedding and matting, while periodic baths help eliminate dirt and pests. Use soaps formulated specifically for dogs to avoid skin irritation, and check for fleas and ticks regularly.</p>
+                <h2>Grooming & Handling</h2>
+                <p>Regular brushing prevents shedding and matting. Use soaps formulated specifically for dogs to avoid skin irritation, and check for fleas and ticks regularly.</p>
             </article>
 
             <article class="dogSection">
-                <h3>Vaccinations & Medications</h3>
-                <p>Consult your veterinarian about core vaccines that protect against common diseases like rabies and parvovirus. Your vet may also recommend additional vaccinations based on your dog's environment, such as protection against Bordetella and Lyme disease.</p>
+                <h2>Vaccinations & Medications</h2>
+                <p>Core vaccines protect against diseases like rabies and parvovirus. Consult your vet for additional vaccinations based on your dog's environment.</p>
             </article>
         </div>
     </section>
 
     <!-- Contact Form -->
-    <section id="contactForm">
+    <section id="contactForm" class="container contact-section">
         <h2>Contact Us For a Consultation</h2>
         <form>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="fname">Owner First Name:</label>
-                <input type="text" id="fname" name="fname">
+                <input type="text" id="fname" name="fname" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="lname">Owner Last Name:</label>
-                <input type="text" id="lname" name="lname">
+                <input type="text" id="lname" name="lname" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="number">Phone Number:</label>
-                <input type="text" id="number" name="number">
+                <input type="text" id="number" name="number" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="email">Email Address:</label>
-                <input type="text" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="time">Time Zone:</label>
-                <input type="text" id="time" name="time">
+                <input type="text" id="time" name="time" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="petName">Pet Name:</label>
-                <input type="text" id="petName" name="petName">
+                <input type="text" id="petName" name="petName" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="petAge">Pet Age:</label>
-                <input type="text" id="petAge" name="petAge">
+                <input type="number" id="petAge" name="petAge" required>
             </div>
-            <div class="formRow">
+            <div class="formGroup">
                 <label for="petType">Pet Type:</label>
-                <input type="text" id="petType" name="petType">
+                <input type="text" id="petType" name="petType" required>
             </div>
-            <input class="button submitButton" type="submit" value="Submit">
+            <button type="submit" class="submitButton">Submit</button>
         </form>
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
-        <div class="footerContent">
+    <footer id="footer" class="footer">
+        <div class="container footerContent">
             <ul class="navList">
                 <li><a href="dog.html">Dogs</a></li>
                 <li><a href="cat.html">Cats</a></li>
@@ -101,6 +105,7 @@
             </ul>
             <img src="PPPoldLogo.png" alt="Old Logo" class="footerLogo">
         </div>
+        <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
     </footer>
 
 </body>
